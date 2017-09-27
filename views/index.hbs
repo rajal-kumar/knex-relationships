@@ -4,6 +4,7 @@
     <title>EDA Phase 1 Express Boilerplate</title>
   </head>
   <body>
+    {{> admin}}
     <ul>
     {{#each users}}
       <a href='/profile/{{id}}'><li>{{name}} ({{email}})</li></a>

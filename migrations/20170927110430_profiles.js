@@ -4,7 +4,7 @@ exports.up = function(knex, Promise) {
     table.increments('user_id').references('users.id')
     table.string('name')
     table.string('profile_pic')
-    table.string('URL')
+    table.string('Email')
   })
 };
 

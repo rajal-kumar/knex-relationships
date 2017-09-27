@@ -25,4 +25,12 @@ router.get('/profile/:id', function (req, res) {
     })
 })
 
+router.post('/add', function (req, res) {
+  db.addUser(req.body, req.app.get('connection'))
+  .then(function () {
+    res.redirect('/')
+  })
+})
+
+
 module.exports = router
